@@ -1,0 +1,384 @@
+@media screen and (max-width: 1439px) {
+
+  .welcome{
+    width: 100%; /*нужно доработать с растягиванием по ширине*/
+    min-width: 640px;
+    background: url(./assets/backgrounds/welcome_background_tablet2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .favorites_items_container{
+    height: 100%;
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .carousel_item:nth-child(n + 3){
+    display: none;
+  }
+
+  .carousel_container{
+    justify-content: center;
+  }
+
+  .tablet:nth-last-child(2n-2){
+    display: flex;
+  }
+  #button_four{
+    display: flex;
+  }
+  .carousel_pagination{
+    width: 104px;
+    justify-content: center;
+  }
+
+  .coffee_shop_desc {
+    width: 100%;
+  }
+
+  .menu{
+    width: 100%;
+  }
+
+  .contacts_content {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .map_container>img{
+    width: 100%
+  }
+
+  .find_card {
+    margin-right: 20px;
+  }
+  .public{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .seasons_container{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  :root{
+    /* colors */
+    --dark-blue:#0C0C0E;
+    --full-black: #000000;
+    --full-white: #FFFFFF;
+    --gold: #BB945F;
+    --gray: #8E8E8E;
+
+    /* fonts */
+    --forum: Forum;
+    --inter: Inter;
+    --inter-bold: Inter, bold;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .body_container{
+    min-width: 640px;
+  }
+
+  .header{
+    width: 100%;
+  }
+
+  .navigation{
+    display: none;
+  }
+
+  .icon_profile{
+    margin-right: 40px;
+  }
+
+  .burger_menu_wrapper{
+    display: block;
+  }
+
+  .burger_menu_btn {
+    display: block;
+    background: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index:20;
+    overflow: hidden;
+  }
+
+  .burger_menu_btn span{
+  width: 45px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--full-white);
+	transition: all 0.5s;
+  }
+
+  .burger_menu_btn span:nth-of-type(2) {
+    top: calc(50% - 10px);
+  }
+
+  .burger_menu_btn span:nth-of-type(3) {
+    top: calc(50% + 10px);
+  }
+
+  .burger_menu_btn.active span:nth-of-type(1) {
+    display: none;
+  }
+  .burger_menu_btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+  .burger_menu_btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+
+  .burger_menu_frame{
+    z-index: 2;
+    display: block;
+    position: fixed;
+    background: var(--dark-blue);
+    width: 332px;
+    height: 579px;
+    transform: translateX(400%);
+    transition:  all 1s ease-out;;
+  }
+
+  .burger_menu_wrapper {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    position: fixed;
+    z-index: -1;
+    transition: 0.6s;
+  }
+
+  .damping {
+
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.0);
+  }
+
+  .burger_menu_frame.active {
+    transform: translateX(132%);
+    transition:  all 0.6s ease-out;
+  }
+
+  .nav_list{
+    margin-top: 10px;
+    position: absolute;
+    top: 100px;
+    left: 107px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+
+  .welcome{
+    width: 100%; /*нужно доработать с растягиванием по ширине*/
+    min-width: 640px;
+    background: url(./assets/backgrounds/welcome_background_tablet2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .welcome_overlay{
+    width: 100%;
+    min-width: 640px;
+  }
+
+  .about{
+    width: 100%;
+    min-width: 640px;
+  }
+
+  .carousel_container{
+    justify-content: center;
+    gap: 3px;
+  }
+
+  .carousel_item_wrapper{
+    display: flex;
+    width: 450px;
+    overflow: hidden;
+  }
+
+  .carousel_line{
+    display: flex;
+    gap: 25px;
+    position: relative;
+    left: 0px;
+  }
+
+  .tablet{
+    display: flex;
+  }
+
+  .nav_arrow_left, .nav_arrow_right{
+    display: block;
+    background: none;
+    border: none;
+    width: 58px;
+  }
+
+  .nav_arrow_left:hover, .nav_arrow_right:hover{
+    cursor: pointer;
+    transition: 1s;
+  }
+  .nav_arrow_left:hover .arrow_img_left, .nav_arrow_right:hover .arrow_img_right{
+    transition: 0.8s;
+    scale: 1.5;
+  }
+
+  .arrow_img_left, .arrow_img_right {
+    margin-top: 45px;
+  }
+
+  .arrow_img_left{
+    margin-right: 45px;
+  }
+
+  .arrow_img_right{
+    margin-left: 45px;
+  }
+
+  .carousel_item:not(#first){
+    display: flex;
+  }
+
+  .carousel_pagination{
+    width: 130px;
+    margin-top: 20px;
+  }
+
+  #button_four, #button_five{
+    display: flex;
+  }
+
+  .favorites, .coffee_shop, .contacts, .library_card, .public{
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .favorites{
+    margin-top: 25px;
+    overflow: visible;
+
+  }
+
+  .favorites_items_container{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 20px 0px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .seasons_container{
+    max-width: 100%;
+    justify-content: space-around;
+  }
+
+  .seasons_item{
+    width: 125px;
+  }
+
+  .menu, .coffee_shop_desc{
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .contacts_content, .library_card_container{
+    flex-wrap: wrap;
+  }
+
+  .about_subtitle{
+    margin: 40px 20px 20px;
+  }
+
+  .coffee_shop{
+    margin-top: 20px;
+  }
+
+  .coffee_shop_desc{
+    font-size: 2.604vw;
+  }
+
+  .desserts{
+    margin-top: 40px;
+    float: right;
+  }
+
+  .desserts>menu_item menu_title{
+    margin-left: -4px;
+  }
+
+  .contacts>.section_title>.section_header{
+    margin-left: 2px;
+  }
+
+  .contacts_content{
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .map_container{
+    margin-left: 16px;
+  }
+
+  .map_container>img{
+    width: 90.625vw;
+  }
+
+  .library_card_container{
+    gap: 19px;
+    justify-content: space-around;
+  }
+
+  .get_a_card{
+    width: 600px;
+    height: 223px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .get_a_card_content{
+    text-align: center;
+  }
+
+  .footer_container>hr{
+    margin-bottom: 21px;
+  }
+
+  .author{
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .organization{
+    margin-left: -10px;
+  }
+}
